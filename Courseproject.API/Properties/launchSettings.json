@@ -1,0 +1,53 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:38234",
+      "sslPort": 44329
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5149",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7172;http://localhost:5149",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_FILENAME": "Test.db",
+        "CLIENT_ID": "9847f9df-7de0-4998-9f04-cac1f72a87bb",
+        "TENANT_ID": "172b5977-747f-452e-85a2-0506cd400572",
+        "CLIENT_SECRET": "Y-C8Q~pEpwo~hF~2XyKiE1OmwoYnrcHMnEwwjcEw",
+        "AD_DOMAIN": "lassedotnetweb.onmicrosoft.com",
+        "CALLBACK_PATH": "/signin-oidc",
+        "IDENTITY_INSTANCE": "https://login.microsoftonline.com/",
+        "AUTH_URL": "https://login.microsoftonline.com/172b5977-747f-452e-85a2-0506cd400572/oauth2/v2.0/authorize",
+        "TOKEN_URL": "https://login.microsoftonline.com/172b5977-747f-452e-85a2-0506cd400572/oauth2/v2.0/token",
+        "SCOPE": "api://9847f9df-7de0-4998-9f04-cac1f72a87bb/GeneralAccess",
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=courseprojectstorage;AccountKey=hENbzNlDcaMbPjkJEe38JNTbp5oeG/il6VCVyd3I6HW6d0VA1tedcq6bZjmtle+77eTrhJcGhfqP+AStLWHXPw==;EndpointSuffix=core.windows.net",
+        "AZURE_STORAGE_CONTAINER_NAME": "uploads"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
